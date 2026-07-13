@@ -1,156 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowBand – Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f6fa;
-            color: #2d3436;
-            line-height: 1.7;
-        }
-        .header {
-            background: linear-gradient(135deg, #6C63FF, #4A47A3);
-            color: white;
-            padding: 48px 24px;
-            text-align: center;
-        }
-        .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-        .header p { opacity: 0.85; font-size: 0.95rem; }
-        .container {
-            max-width: 760px;
-            margin: 40px auto;
-            padding: 0 24px 60px;
-        }
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 24px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-        }
-        h2 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #6C63FF;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #f0efff;
-        }
-        p { margin-bottom: 12px; font-size: 0.95rem; }
-        ul { margin: 8px 0 12px 20px; }
-        li { margin-bottom: 6px; font-size: 0.95rem; }
-        .updated {
-            text-align: center;
-            color: #999;
-            font-size: 0.85rem;
-            margin-top: 32px;
-        }
-        a { color: #6C63FF; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .highlight {
-            background: #f0efff;
-            border-left: 4px solid #6C63FF;
-            padding: 12px 16px;
-            border-radius: 0 8px 8px 0;
-            margin: 12px 0;
-            font-size: 0.9rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowBand - Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .subtitle { color: #666; margin-bottom: 32px; font-size: 15px; }
+  h2 { font-size: 20px; margin-top: 40px; margin-bottom: 12px; border-bottom: 1px solid #e5e5e5; padding-bottom: 8px; }
+  h3 { font-size: 16px; margin-top: 24px; margin-bottom: 8px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #0645ad; }
+  .updated { color: #666; font-size: 13px; margin-top: 48px; border-top: 1px solid #e5e5e5; padding-top: 16px; }
+  .contact-box { background: #f7f7f7; border-radius: 8px; padding: 16px 20px; margin-top: 12px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid #e5e5e5; vertical-align: top; }
+  th { background: #f7f7f7; }
+</style>
 </head>
 <body>
 
-<div class="header">
-    <h1>FlowBand</h1>
-    <p>Privacy Policy · HSE Studio</p>
+<h1>FlowBand</h1>
+<p class="subtitle">Privacy Policy &middot; HSE Studio</p>
+
+<h2>Overview</h2>
+<p>
+FlowBand ("the App") is developed and maintained by HSE Studio ("we", "us", "our"). This Privacy Policy
+explains what information the App handles, how it is used, and what choices you have, when you use FlowBand
+on your Android device.
+</p>
+<p>
+<strong>In short: FlowBand does not collect, transmit, or sell any personally identifiable information.</strong>
+All of your preferences and personalization settings are stored locally on your device only, and are never
+sent to HSE Studio's servers because HSE Studio does not operate any backend server that stores your data.
+</p>
+
+<h2>Information We Do Not Collect</h2>
+<p>We do not collect, transmit, sell, or store:</p>
+<ul>
+  <li>Your name, email address, phone number, or any personal identifiers</li>
+  <li>Your precise or approximate location (any city/location used for weather or prayer times is entered
+      manually by you and is never derived from GPS, network, or device location services)</li>
+  <li>Device identifiers, advertising IDs, or IMEI/serial numbers</li>
+  <li>Usage analytics, behavioral tracking data, or crash reports sent to our servers</li>
+  <li>Any financial, banking, or payment information</li>
+  <li>Contacts, photos, messages, or any other personal files on your device</li>
+  <li>Biometric data</li>
+</ul>
+<p>
+FlowBand does not use any analytics SDK (such as Firebase Analytics or Google Analytics), and does not
+display third-party advertisements. There is no advertising SDK integrated into the App.
+</p>
+
+<h2>How the App Works</h2>
+<p>
+FlowBand displays a scrolling ticker overlay on your screen showing news, weather, prayer times, sports,
+and financial market information. To provide this functionality, the App makes outbound network requests
+directly from your device to the following public data sources:
+</p>
+<table>
+  <tr><th>Purpose</th><th>Service</th><th>Personal data sent</th></tr>
+  <tr><td>News</td><td>Publicly available RSS feeds from Turkish news outlets</td><td>None</td></tr>
+  <tr><td>Weather</td><td>Open-Meteo API (open-meteo.com)</td><td>None — no account or personal data required</td></tr>
+  <tr><td>Prayer times</td><td>Aladhan API (aladhan.com)</td><td>City name only, as manually entered by you</td></tr>
+  <tr><td>Financial data</td><td>Public market data APIs</td><td>None</td></tr>
+  <tr><td>Sports news</td><td>Publicly available RSS feeds</td><td>None</td></tr>
+</table>
+<p>
+These requests are made directly from your device to the respective services described above. HSE Studio
+does not act as an intermediary, and does not receive, log, or have access to any of this network traffic.
+</p>
+
+<h2>Local Storage</h2>
+<p>
+FlowBand stores your preferences (such as manually entered city, selected news sources, display and style
+settings, ticker layout, and any personal notes you add within the App) locally on your device using
+Android's SharedPreferences and/or local app storage. This data:
+</p>
+<ul>
+  <li>Never leaves your device</li>
+  <li>Is not accessible to HSE Studio or any third party</li>
+  <li>Is deleted automatically if you uninstall the App, or can be cleared manually via Android Settings
+      &rarr; Apps &rarr; FlowBand &rarr; Storage &rarr; Clear data</li>
+</ul>
+
+<h2>Permissions</h2>
+<p>FlowBand requests the following Android permissions. None of them are used to collect or transmit
+personal data to HSE Studio or any third party.</p>
+<table>
+  <tr><th>Permission</th><th>Why it is needed</th></tr>
+  <tr>
+    <td>SYSTEM_ALERT_WINDOW<br>(Draw over other apps)</td>
+    <td>Required to display the scrolling ticker band as an overlay on your screen, on top of other apps.</td>
+  </tr>
+  <tr>
+    <td>PACKAGE_USAGE_STATS<br>(Usage Access)</td>
+    <td>Required to detect which app is currently in the foreground on your device, so the ticker band can
+        be shown and positioned correctly relative to that app. This information is processed entirely on
+        your device in real time and is never transmitted, stored, logged, or shared with HSE Studio or any
+        third party. You can revoke this permission at any time from Android Settings &rarr; Apps &rarr;
+        Special access &rarr; Usage access; the App will continue to function with reduced positioning
+        accuracy if you do so.</td>
+  </tr>
+  <tr>
+    <td>INTERNET</td>
+    <td>Required to fetch news, weather, prayer times, sports, and financial data from the public sources
+        listed above.</td>
+  </tr>
+  <tr>
+    <td>ACCESS_NETWORK_STATE</td>
+    <td>Required to check network connectivity before making the requests described above, to avoid
+        unnecessary retries.</td>
+  </tr>
+  <tr>
+    <td>RECEIVE_BOOT_COMPLETED</td>
+    <td>Required to automatically restart the ticker band after your device reboots, only if you have
+        enabled this option.</td>
+  </tr>
+  <tr>
+    <td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_DATA_SYNC</td>
+    <td>Required to keep the ticker running reliably as a foreground service while the App is active.</td>
+  </tr>
+  <tr>
+    <td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td>
+    <td>Requested optionally, only with your explicit action, to prevent Android's battery optimization
+        from stopping the ticker band unexpectedly.</td>
+  </tr>
+</table>
+<p>
+If a future version of the App requests an additional permission, this Privacy Policy will be updated
+before that version is released, and the update will be reflected in the "Last updated" date below.
+</p>
+
+<h2>Third-Party Services</h2>
+<p>
+The App connects to the following third-party services solely to retrieve publicly available data. HSE
+Studio does not share any of your personal data with these services, because HSE Studio does not collect
+any personal data in the first place. Each service operates under its own independent privacy policy:
+</p>
+<ul>
+  <li>Open-Meteo &mdash; <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">open-meteo.com/en/terms</a></li>
+  <li>Aladhan Prayer Times API &mdash; <a href="https://aladhan.com/privacy-policy" target="_blank" rel="noopener">aladhan.com/privacy-policy</a></li>
+</ul>
+<p>
+HSE Studio is not responsible for, and does not control, the privacy practices of these independent
+third-party services. We encourage you to review their policies directly.
+</p>
+
+<h2>Data Security</h2>
+<p>
+Because FlowBand does not collect or transmit personal data to any server operated by HSE Studio, there is
+no HSE Studio-controlled database of user data that could be exposed in the event of a breach. All data
+handled by the App resides locally on your own device, protected by Android's standard app sandboxing and
+your device's own security settings (screen lock, encryption, etc.).
+</p>
+
+<h2>Data Retention and Deletion</h2>
+<p>
+Since no personal data is collected or stored by HSE Studio, there is no server-side data for us to retain
+or delete on your behalf. All locally stored preferences can be erased at any time by uninstalling the App
+or clearing its storage from Android Settings.
+</p>
+
+<h2>Children's Privacy</h2>
+<p>
+FlowBand is not directed at, and is not intended for use by, children under the age of 13 (or the
+applicable minimum age in your jurisdiction). We do not knowingly collect any information from children,
+and since the App does not collect personal data from any user regardless of age, no child-specific data
+is processed.
+</p>
+
+<h2>Your Rights</h2>
+<p>
+Because FlowBand does not collect, store, or process any personal data on our servers, there is no personal
+data for HSE Studio to provide, correct, export, or delete upon request under regulations such as the EU
+General Data Protection Regulation (GDPR) or the Turkish Personal Data Protection Law (KVKK). All data
+control remains entirely in your hands, on your own device, at all times. If you have any question about
+how a specific feature works, please contact us using the details below.
+</p>
+
+<h2>International Users</h2>
+<p>
+FlowBand can be used worldwide. Since the App does not transmit personal data to HSE Studio's servers, no
+cross-border transfer of personal data by HSE Studio occurs. Any data exchanged with the third-party
+services listed above is subject to those services' own data handling and international transfer practices.
+</p>
+
+<h2>Changes to This Policy</h2>
+<p>
+We may update this Privacy Policy from time to time, for example to reflect new App features or changes in
+applicable law. Any changes will be posted on this page with an updated "Last updated" date. Continued use
+of the App after such changes constitutes your acceptance of the updated policy. We encourage you to review
+this page periodically.
+</p>
+
+<h2>Contact</h2>
+<p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+<div class="contact-box">
+  <strong>HSE Studio</strong><br>
+  Email: <a href="mailto:hlmsnrrdgn@gmail.com">hlmsnrrdgn@gmail.com</a>
 </div>
 
-<div class="container">
-
-    <div class="card">
-        <h2>Overview</h2>
-        <p>FlowBand ("the App") is developed and maintained by HSE Studio. This Privacy Policy explains how the App handles information when you use it on your Android device.</p>
-        <div class="highlight">
-            FlowBand does not collect, store, or share any personal data. All preferences are stored locally on your device only.
-        </div>
-    </div>
-
-    <div class="card">
-        <h2>Information We Do Not Collect</h2>
-        <p>We do not collect, transmit, or store:</p>
-        <ul>
-            <li>Your name, email address, or any personal identifiers</li>
-            <li>Your location data</li>
-            <li>Device identifiers or advertising IDs</li>
-            <li>Usage analytics or crash reports sent to our servers</li>
-            <li>Any financial or banking information</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>How the App Works</h2>
-        <p>FlowBand displays a scrolling news and information ticker on your screen. To provide this functionality, the App makes outbound requests to the following public services:</p>
-        <ul>
-            <li><strong>News feeds (RSS):</strong> Publicly available RSS feeds from Turkish news outlets</li>
-            <li><strong>Weather data:</strong> Open-Meteo API (open-meteo.com) — no account or personal data required</li>
-            <li><strong>Prayer times:</strong> Aladhan API (aladhan.com) — city name only, no personal data</li>
-            <li><strong>Financial data:</strong> Public market data APIs</li>
-            <li><strong>Sports news:</strong> Publicly available RSS feeds</li>
-        </ul>
-        <p>These requests are made directly from your device to the respective services. HSE Studio does not act as an intermediary and does not receive or log any of this traffic.</p>
-    </div>
-
-    <div class="card">
-        <h2>Local Storage</h2>
-        <p>The App stores your preferences (such as selected city, chosen news sources, display settings, and personal notes) locally on your device using Android's SharedPreferences. This data never leaves your device and is not accessible to HSE Studio or any third party.</p>
-    </div>
-
-    <div class="card">
-        <h2>Permissions</h2>
-        <p>FlowBand requests the following Android permissions:</p>
-        <ul>
-            <li><strong>SYSTEM_ALERT_WINDOW (Draw over other apps):</strong> Required to display the ticker band on your screen.</li>
-            <li><strong>INTERNET:</strong> Required to fetch news, weather, prayer times, and financial data.</li>
-            <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Required to automatically restart the ticker band after your device reboots, if you have enabled this feature.</li>
-            <li><strong>FOREGROUND_SERVICE:</strong> Required to keep the ticker running in the background as a foreground service.</li>
-            <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:</strong> Requested optionally to prevent the system from stopping the ticker band due to battery optimization.</li>
-        </ul>
-        <p>None of these permissions are used to collect or transmit personal data.</p>
-    </div>
-
-    <div class="card">
-        <h2>Third-Party Services</h2>
-        <p>The App connects to the following third-party services to retrieve publicly available data. Each service has its own privacy policy:</p>
-        <ul>
-            <li>Open-Meteo: <a href="https://open-meteo.com/en/terms" target="_blank">open-meteo.com/en/terms</a></li>
-            <li>Aladhan Prayer Times API: <a href="https://aladhan.com/privacy-policy" target="_blank">aladhan.com/privacy-policy</a></li>
-        </ul>
-        <p>HSE Studio is not responsible for the privacy practices of these third-party services.</p>
-    </div>
-
-    <div class="card">
-        <h2>Children's Privacy</h2>
-        <p>FlowBand is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
-    </div>
-
-    <div class="card">
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
-    </div>
-
-    <div class="card">
-        <h2>Contact</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us:</p>
-        <p><strong>HSE Studio</strong><br>
-        Email: <a href="mailto:hlmsnrrdgn@gmail.com">hlmsnrrdgn@gmail.com</a></p>
-    </div>
-
-    <p class="updated">Last updated: June 2025 &nbsp;·&nbsp; HSE Studio</p>
-
-</div>
+<p class="updated">Last updated: July 2026 &middot; HSE Studio</p>
 
 </body>
 </html>
